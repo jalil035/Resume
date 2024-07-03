@@ -1,0 +1,296 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: beige;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+header{
+    background-image: url(Header\ Design.png);
+    background-size: cover;
+    padding: 30px;
+    height: 400px;
+    border-radius: 10px;
+    }
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: transparent;
+}
+
+input{
+    float: right;
+    margin: 10px;
+    padding: 10px;
+    background-color: tomato;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+label{
+    margin: 0;
+    padding: 0 80px;
+    font-size: 3vw;
+    color: tomato;
+    text-align: left;
+}
+
+li{
+    float: right;
+}  
+
+li a{
+    display: block;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    color:black;
+}
+
+.article h2{
+    margin: 0;
+    padding: 80px 90px 0;
+    color: black;
+    text-align: left;
+    font-size: 2vw;
+}
+
+.article h1{
+    margin: 0;
+    padding: 0 80px;
+    color: black;
+    text-align: left;
+    font-size: 4vw;
+}
+
+.article p{
+    margin: 0;
+    padding: 0 80px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.buttons{
+    position: relative;
+    margin: 0;
+    padding: 0 70px;
+}
+
+
+.buttons button{
+    position: relative;
+    margin: 10px;
+    padding: 15px 25px;
+    border-radius: 50px;
+    border: none;
+    background-color: tomato;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    margin: 100px;
+    background: #f1e5d7;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0,0,0,0.30);
+}
+
+.about h1{
+    margin-bottom: 30px;
+    font-weight: 600;
+    color: black;
+}
+
+.about .paragraph{
+    color: black;
+    text-align: center;
+    padding: 0 80px 0;
+    font-size: 18px;
+}
+
+.details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: black;
+}
+
+.details .details-item{
+    margin:0  40px;
+}
+
+.details-item strong{
+    font-size: 19px;
+    color: darkcyan;
+}
+
+.what{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.what h1{
+    font-weight: 600;
+    margin-top: 80px;
+}
+
+.what .paragraph{
+    color: black;
+    text-align: center;
+    padding: 0 150px 0;
+    font-size: 18px;
+    margin: 0 0 70px;
+}
+
+.boxing{
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   overflow: hidden;
+}
+
+.boxing .box{
+    display: inline-block;
+    width: auto;
+    height: auto;
+    float: left;
+    justify-content: center;
+    margin: 18px;
+    background-color: white;
+    padding: 15px 30px 0;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+}
+
+.boxing div p{
+    text-align: justify;
+}
+
+.boxing i{
+    font-size: 50px;
+    color: tomato;
+}
+
+.boxing img{
+    width: 50px;
+}
+
+@media (max-width: 767px) {
+    .about {
+    margin: 50px auto;
+}
+
+.what .paragraph {
+    padding: 0;
+}
+
+.boxing {
+    overflow: hidden;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.boxing div {
+    flex:  1 1 auto;
+    width: 100%;
+}
+
+.details {
+    flex-direction: column;
+}
+
+.details .details-item {
+    margin: 0;
+}
+
+header {
+    height: auto;
+    background-size: 100% auto;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-color: #FFF1E6;
+    background-position: bottom;
+    padding-bottom: 120px;
+    padding-left: 0;
+    padding-right: 10px;
+}
+
+.buttons {
+    padding: 0;
+    /* text-align: center; */
+}
+
+.article p {
+    padding: 0;
+}
+
+.article {
+    margin-left: 18px;
+}
+
+.article h2 {
+    padding: 0;
+    font-size: 24px;
+}
+
+.article h1 {
+    padding: 1rem 0;
+    font-size: 30px;
+}
+
+header &gt;ul {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header &gt;ul label {
+    padding: 0;
+}
+
+header {}
+
+.about .paragraph {
+    padding: 0;
+}
+
+.boxing div {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border-radius: 16px;
+    overflow: hidden;
+    float: none;
+    margin: 0;
+}
+
+.boxing {
+    overflow: unset;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+}
+
